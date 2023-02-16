@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #111222;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: rgba(17, 18, 34, 0.7);
+    width: 100vw;
+    position: fixed;
+    z-index: 30;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    color: coral;
+    transition: 0.3s;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 90px 100px;
+    color: white;
+}
+
+.scene i {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: animate linear infinite;
+}
+
+.page{
+    transform: translateX(200%);
+    transition: transform 0.5s ease;
+}
+
+.page:nth-of-type(even){
+    transform: translateX(-200%);
+}
+
+.page.show{
+    transform: translateX(0);
+}
+
+/* .logolink:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+} */
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.title{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content{
+    position: relative;
+    width: 85vw; /*remember to calculate the ratio later */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img{
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+} 
+
+.content .text{
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.content .text h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.info_title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+#maptitle{
+    color: lightblue;
+}
+
+#cattitle{
+    color: darksalmon;
+}
+
+#planttitle{
+    color: darkseagreen;
+}
+
+#catlogo:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+#maplogo:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(0, 238, 255));
+}
+
+#plantlogo:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(0, 255, 64));
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%, 90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform:translateY(-100px);
+    }
+}

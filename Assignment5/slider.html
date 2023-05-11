@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="navbar">
+        <ul class="navigation" id="nav">
+            <li><a href="#home">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>        
+            <span class="toggleMenu" id="toggle"></span>
+        </ul>
+    </div>
+
+
+
+<nav class="navbar">
+
+<ul>
+
+  <li>
+    <a href="#home" class="dot active" data-scroll="home">
+      <span>home</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#project" class="dot" data-scroll="project">
+      <span>Project</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#skill_sect" class="dot" data-scroll="skill_sect">
+      <span>Skills</span>
+    </a>
+  </li>
+
+  <!-- <li>
+    <a href="#project" class="dot" data-scroll="project">
+      <span>project</span>
+    </a>
+  </li> -->
+
+  <li>
+    <a href="#contact" class="dot" data-scroll="contact">
+      <span>contact</span>
+    </a>
+  </li>
+
+</ul>
+
+</nav>
+
+<section class="sec" id="home">
+    <div class = "about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "img/portrait.png" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>Linh Tran</h2>
+              <h3>Computer Science</h3>
+            </div>
+  
+            <ul class = "icons">
+              <li><i class = "fab fa-facebook-f"></i></li>
+              <li><i class = "fab fa-twitter"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1>Xin<span>CHAO</span></h1>
+          <!-- <h2>Here's who I am & what I do</h2> -->
+          <div class = "about-btns">
+            <button type = "button" class = "btn btn-pink" onclick="window.location.href = 'https://drive.google.com/file/d/1DlAbx_8EBWXISBxriAB40p8rMY0UrS8S/view?usp=sharing';">resume</button>
+            <button type="button" class = "btn btn-white" onclick="window.location.href = '#project';">projects</button>
+          </div>
+  
+          <div class = "about-para">
+            <p>I am currently a sophomore at New York University Abu Dhabi. I am passionate about visualization concepts.</p>
+            <p>However, I am open to any opportunity in different fields to learn more about the interdisciplinary between various fields. </p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section class="sec" id="project">
+    <h2 class="title">Projects</h2>
+    <div class="grid-container">
+        <div class="grid_1">
+            <div class="card" id="center">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/mff.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://linhtran263.github.io/CommLab/Assignment1/">30 MFF</a></h2>
+                        <p>Individual Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_2">
+            <div class="card" id="center">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/comic.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://sarah-altowaity1.github.io/Caatiyat-Island/">Caatiyat Island</a></h2>
+                        <p>Group Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_3">
+            <div class="card" id="right">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/audio.PNG" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://ubadr.github.io/soundsite">Melodic.verse</a></h2>
+                        <p>Group Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_4">
+            <div class="card" id="right">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/video.PNG" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://ubadr.github.io/videosite">Mortal Meeting</a></h2>
+                        <p>Group Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_5">
+            <div class="card" id="left">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/cat_hunt.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://www.figma.com/proto/XNSuj9TO61F87hYXdcb1is/Scavenger-Hunt?type=design&node-id=156-12&scaling=contain&page-id=117%3A2">ScaOut</a></h2>
+                        <p>Group Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_6">
+            <div class="card" id="left">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/game.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://peat-grove-fukuiraptor.glitch.me/">Dragon Hunt</a></h2>
+                        <p>Group Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_7">
+            <div class="card" id="center">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/town.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://github.com/LinhTran263/connections-lab/tree/main/Project3">Build Your Town!</a></h2>
+                        <p>Individual Project</p>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+
+        <div class="grid_8">
+            <div class="card" id="center">
+                <div class="card_inner">
+                    <div class="card_face" id="card_front">
+                        <img src="img/stars.png" alt="">
+                    </div>
+                    <div class="card_face" id="card_back">
+                        <h2><a href="https://linhtran263.github.io/connections-lab/project1/">Constellation</a></h2>
+                        <p>Individual Project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="sec" id="skill_sect">
+    <section class="skills">
+        <header>Skills</header>
+        <div class="skill">
+            <div class="set">
+                <span class="fas fa-globe"></span>
+                <header>Web Development</header>
+                <div class="list">
+                    <label for="">Html</label>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="list">
+                    <label for="">CSS</label>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="list">
+                    <label for="">JavaScript</label>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="list">
+                    <label for="">NodeJS</label>
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </div>
+
+            <div class="set">
+                <span class="fas fa-microphone"></span>
+                <header>Audio</header>
+                <div class="list">
+                    <label for="">Recording</label>
+                    <i class="fas fa-record-vinyl"></i>
+                </div>
+                <div class="list">
+                    <label for="">Editing Audio</label>
+                    <i class="fas fa-cut"></i>
+                </div>
+                <div class="list">
+                    <label for="">Corporating</label>
+                    <i class="fas fa-handshake"></i>
+                </div>
+            </div>
+
+            <div class="set">
+                <span class="fas fa-film"></span>
+                <header>Video</header>
+                <div class="list">
+                    <label for="">Scripting</label>
+                    <i class="fas fa-marker"></i>
+                </div>
+                <div class="list">
+                    <label for="">Shooting Video</label>
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="list">
+                    <label for="">Editing Video</label>
+                    <i class="fas fa-columns"></i>
+                </div>
+            </div>
+
+        </div>
+    </section> 
+</section>
+<!-- <section class="sec" id="project">project</section> -->
+<section class="sec" id="contact">
+    <div class="container_contact">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Let get in touch</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<ul class = "icons">
+    <li><a href="https://www.facebook.com/"><i class = "fab fa-facebook-f"></i></a></li>
+    <li><a href="https://twitter.com/?lang=en"><i class = "fab fa-twitter"></i></a></li>
+    <li><a href="https://www.linkedin.com/"><i class = "fab fa-linkedin"></i></a></li>
+    <li><a href="https://www.instagram.com/"><i class = "fab fa-instagram"></i></a></li>
+</ul>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+<script src="slider.js"></script>
+</body>
+</html>
